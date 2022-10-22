@@ -1,0 +1,9 @@
+.redCat {
+    width: 200px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.p {
+    color: red;
+}

@@ -1,0 +1,29 @@
+body {
+    background-color: aqua;
+}
+
+.first_h {
+    font-family: Verdana, sans-serif;
+    color: rebeccapurple
+}
+
+.second_h {
+    font-family: Arial, Helvetica, sans-serif;
+    color: royalblue
+}
+
+.third_h {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgoldenrod
+}
+
+.first_p {
+    font-family: Helvetica, sans-serif;
+    color: blueviolet;
+}
+
+img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
