@@ -1,4 +1,4 @@
-const tempCelcius = Number.parseInt(prompt('Введите температуру в градусах Цельсия', ''));
+const tempCelcius = Number.parseInt(prompt('Введите температуру за окном в градусах Цельсия'));
  
-tempFarenheit = tempCelcius * 1.8 + 32;
-alert  (tempFarenheit);
+let tempFarenheit = Math.round(tempCelcius * (9/5) + 32);
+alert('Температура за окном в градусах Фаренгейтах равна: ' + tempFarenheit);
