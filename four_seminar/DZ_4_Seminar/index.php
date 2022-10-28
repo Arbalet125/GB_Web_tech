@@ -11,6 +11,12 @@ $skills = [
         ["name"=>"Illustrator", "percent"=>"10%"],
         ["name"=>"Media", "percent"=>"60%"],
 	];
+$workExp = [
+        ["title"=>"Front End Developer", "startDate"=>"Jan 2015", "endDate"=>"Current", "infoJob"=>"Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."],
+        ["title"=>"Web Developer / something.com", "startDate"=>"Mar 2012", "endDate"=>"Dec 2014", "infoJob"=>"Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."],
+        ["title"=>"Grapgic Designer / designersomething.com", "startDate"=>"jun 2010", "endDate"=>"Mar 2012", "infoJob"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."],
+    ];
+
 ?>
 
 <!DOCTYPE html>
