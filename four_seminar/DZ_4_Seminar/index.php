@@ -6,17 +6,17 @@ $mail = "123@mail.ru";
 $phone = "1234444444";
 
 $skills = [
-		["name"=>"Adobe Photoshop", "percent"=>"70%"],
+		["name"=>"Adobe Photoshop", "percent"=>"30%"],
         ["name"=>"Photography", "percent"=>"80%"],
         ["name"=>"Illustrator", "percent"=>"10%"],
         ["name"=>"Media", "percent"=>"60%"],
 	];
+
 $workExp = [
-        ["title"=>"Front End Developer", "startDate"=>"Jan 2015", "endDate"=>"Current", "infoJob"=>"Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."],
+		["title"=>"Front End Developer", "startDate"=>"Jan 2015", "endDate"=>"Current", "infoJob"=>"Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."],
         ["title"=>"Web Developer / something.com", "startDate"=>"Mar 2012", "endDate"=>"Dec 2014", "infoJob"=>"Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."],
         ["title"=>"Grapgic Designer / designersomething.com", "startDate"=>"jun 2010", "endDate"=>"Mar 2012", "infoJob"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."],
-    ];
-
+	];
 ?>
 
 <!DOCTYPE html>
@@ -94,25 +94,15 @@ $workExp = [
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
+	<?php for($i = 0; $i < count($workExp); $i++) : ?>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-opacity"><b><?php echo $workExp[$i]['title']; ?></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $workExp[$i]['startDate']; ?>- <?php if ($i == 0) : ?> <span class="w3-tag w3-teal w3-round"><?php echo $workExp[$i]['endDate']; ?></span>; <?php else : ?><?php echo $workExp[$i]['endDate']; ?> <?php endif ?></h6>
+          <p><?php echo $workExp[$i]['infoJob']; ?></p>
           <hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-        </div>
-      </div>
-
+       <?php endfor; ?>
+       </div>	
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Образование</h2>
         <div class="w3-container">
