@@ -1,13 +1,13 @@
 let myName = prompt("Введите имя");
 
-hiName()
-yourName()
+hiName(myName)
+yourName(myName)
 
-function hiName(myName) {
+function hiName() {
     console.log('Hi ' + myName);
 }
 
-function yourName(myName) {
+function yourName() {
     const question = confirm('Это ваше имя?');
 if (question) {
     alert("Отлично " + myName + "!");
